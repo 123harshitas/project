@@ -1,0 +1,21 @@
+ A SQL table "Registration" Table with appropriate fields to store registration
+information. Include fields such as ID (Primary Key), Name, Email, Date of Birth(DOB) and also implementation of CRUD:-
+create table registration(
+    -> sid int(3) primary key,
+    -> sname char(15),
+    -> email char(15),
+    -> phone long,
+    -> city char(15),
+    -> course char(15),
+    -> DOB double
+    -> );
+ insert into mystudents values(101,'harsh','harsh@gmail.com',123456,'Blore','Java FSD',21-02-2000);
+insert into mystudents values(102,'john','john@gmail.com',456789123,'DElhi','Java BSD',21-02-2000);
+insert into mystudents values(103,'vansh','vansh@gmail.com',23456789,'nepal','Reactjs',11-03-2001);
+ insert into mystudents values(104,'humza','humza@gmail.com',9632145789,'gurgoan','nodejs',12-04-2002);
+ insert into mystudents values(105,'rahul','rahul@gmail.com',9630505200,'hyderabad','javascript',22-04-2002);
+insert into mystudents values(106,'monu','monu@gmail.com',9630625000,'hyderbad','java',22-05-2005);
+ insert into mystudents values(107,'jonny','jonny@gmail.com',963456975,'hyderbad','javafsd',22-06-2005);
+ update registration set DOB=0 where sid=101;
+ update registration set course='Java Fullstack';
+ delete from registration where sid=105;
